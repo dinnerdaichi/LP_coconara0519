@@ -347,7 +347,7 @@ print {
   .fv__head-parts {
     display: flex;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 3%;
   }
 
   .head__display-none-parts{
@@ -5274,7 +5274,7 @@ print {
     font-family: 'Zen Kaku Gothic New';
     min-width: 375px;
     width: 100%;
-    height: 835px;
+    /* height: 835px; */
     background-color: #FFE9E0;
   }
 
@@ -5486,7 +5486,7 @@ print {
 
   .keyvisualArea {
     width: 100%;
-    height: 835px;
+    /* height: 760px; */
     position: relative;
     /* max-width: 1440px; */
     margin: 0 auto;
@@ -5494,22 +5494,26 @@ print {
     background-size: cover;
     background-position: 70% center;
     font-family: 'Zen Kaku Gothic New';
+    aspect-ratio: 750 / 835;
 
+  }
 
+  @media screen and (max-width: 600px) {
+    .keyvisualArea {
+      /* height: 620px; */
+    }
   }
 
   @media screen and (max-width: 480px) {
     .keyvisualArea {
-      height: 675px;
+      /* height: 465px; */
     }
-
   }
 
   @media screen and (max-width: 375px) {
     .keyvisualArea {
-      height: 535px;
+      /* height: 420px; */
     }
-
   }
 
 
@@ -5539,7 +5543,7 @@ print {
     /* 横方向に繰り返し */
     background-size: 1em 0.3em;
     /* 点の間隔とサイズ調整 */
-    padding-top: .4em;
+    padding-top: .3em;
     /* 縦方向の位置調整 */
   }
 
@@ -5553,17 +5557,42 @@ print {
     max-width: 900px;
     margin: 0 auto;
     z-index: 100;
-    padding-top: 50px;
+    padding-top: 6%;
     box-sizing: border-box;
     height: 100%;
-    padding-inline:40px;
+    padding-inline:30px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .fv__contents {
+      padding-inline: 15px;
+    }
+
   }
 
   .head__display-none-parts{
     display: block;
-    width: 100%;
-    max-width: 477px;
+    width: 70%;
+    /* max-width: 60%; */
+    margin-left: 10px;
 
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .head__display-none-parts{
+    margin-left: 5px;
+
+    }
+
+  }
+
+  @media screen and (max-width: 375px) {
+    .head__display-none-parts{
+      max-width: 240px;
+    margin-left: 5px;
+
+    }
 
   }
 
@@ -5572,6 +5601,12 @@ print {
     width: 100%;
     margin-top: 20px;
 
+  }
+
+  @media screen and (max-width: 480px) {
+    .head__display-none-parts img{
+      margin-top: 10px;
+    }
 
   }
 
@@ -5580,14 +5615,27 @@ print {
   }
 
   .fv__head h2 {
-    font-size: 9vw;
+    font-size: 9.6vw;
     font-weight: bold;
     text-align: left;
     margin-top: 10px;
+    margin-left: 10px;
   }
-  @media screen and (max-width: 480px) {
+
+  @media screen and (max-width: 540px) {
     .fv__head h2 {
-      font-size: 8vw;
+      font-size: 9vw;
+      margin-top: 5px;
+    }
+
+  }
+
+  @media screen and (max-width: 375px) {
+    .fv__head h2 {
+      font-size: 36px;
+      margin-top: 5px;
+    margin-left: 5px;
+
     }
 
   }
@@ -5602,23 +5650,59 @@ print {
   .head__text01 {
     font-size: 4.3vw;
     font-weight: bold;
+    margin-left: 10px;
+
+  }
+
+  @media screen and (max-width: 375px) {
+    .head__text01 {
+      font-size: 16px;
+    margin-left: 5px;
+
+    }
 
   }
 
   .head__text02 {
-    width: 100%;
+    width: 96%;
     margin-top: 20px;
+    margin-left: 10px;
+  }
+  @media screen and (max-width: 480px) {
+    .head__text02 {
+      margin-top: 10px;
+    margin-left: 5px;
+
+    }
+
   }
 
   .head__text02 img {
-    width: 100%;
+    width: 97%;
   }
 
   .fv__head-parts {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 24px;
+    width: 70%;
+    margin-top: 25px;
+  }
+
+  @media screen and (max-width: 480px) {
+    .fv__head-parts {
+      margin-top: 10px;
+    }
+
+  }
+
+  @media screen and (max-width: 375px) {
+    .fv__head-parts {
+     max-width: 240px;
+     width: 100%;
+    margin-top: 10px;
+
+    }
+
   }
 
   .fv__head-parts img {
@@ -5626,6 +5710,8 @@ print {
     object-fit: cover;
     max-width: 478px;
   }
+
+
 
   /* .fv__head-parts img:nth-child(1) {
     max-width: 184px;
@@ -5655,23 +5741,37 @@ print {
     font-family: 'Zen Kaku Gothic New';
   }
 
+  @media screen and (max-width: 480px) {
+    .fv__price {
+      padding: 20px;
+    }
+
+  }
+
   .fv__price-head {
     font-weight: bold;
     /* font-size: 28px; */
-    font-size: 3.4vw;
+    font-size: 14px;
     color: white;
     background-color: #E24607;
     width: 90%;
     margin: 0 auto;
     padding: 5px 16px;
     border-radius: 4px;
-    max-width: 390px;
+    max-width: 210px;
     letter-spacing: 0.06em;
 
   }
 
+  @media screen and (max-width: 480px) {
+    .fv__price-head {
+      max-width: 210px;
+    }
+
+  }
+
   .fv__price-text {
-    font-weight: bold;
+    font-weight: normal;
     /* font-size: 56px; */
     font-size: 7vw;
     color: #1E1E1E;
@@ -5679,8 +5779,23 @@ print {
     font-family: 'Murecho', sans-serif;
   }
 
+  @media screen and (max-width: 480px) {
+    .fv__price-text {
+      font-size: 28px;
+      line-height: 1;
+    }
+
+  }
+
   .fv__price-text span {
     font-size: 5vw;
+  }
+
+  @media screen and (max-width: 480px) {
+    .fv__price-text span {
+      font-size: 16px;
+    }
+
   }
 
 
